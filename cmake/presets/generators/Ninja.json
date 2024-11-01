@@ -1,0 +1,17 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "include": ["../base/base.json"],
+    "configurePresets": [
+        {
+            "hidden": true,
+            "name" : "baseNinja",
+            "generator": "Ninja",
+            "inherits": "base"
+        }
+    ]
+}

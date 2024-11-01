@@ -1,0 +1,33 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "include": ["../architectures/architectures.json"],
+    "configurePresets": [
+        {
+            "hidden": true,
+            "name": "clang",
+            "cacheVariables": {
+				"CMAKE_C_COMPILER": "clang",
+				"CMAKE_CXX_COMPILER": "clang"
+			}
+        },
+        {
+            "hidden": true,
+            "name": "clang-x86",
+            "inherits": ["arch-x86", "clang"],
+            "cacheVariables": {
+				"CMAKE_C_FLAGS": "-m32",
+				"CMAKE_CXX_FLAGS": "-m32"
+			}
+        },
+        {
+            "hidden": true,
+            "name": "clang-x86_64",
+            "inherits": ["arch-x86_64", "clang"]
+        }
+    ]
+}

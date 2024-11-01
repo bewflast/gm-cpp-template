@@ -1,0 +1,31 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "hidden": true,
+            "name": "release",
+            "cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release"
+			}
+        },
+        {
+            "hidden": true,
+            "name": "debug",
+            "cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug"
+			}
+        },
+        {
+            "hidden": true,
+            "name": "rel'n'syms",
+            "cacheVariables": {
+				"CMAKE_BUILD_TYPE": "RelWithDebInfo"
+			}
+        }
+    ]
+}

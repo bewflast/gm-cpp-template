@@ -1,0 +1,29 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "include": ["../base/base.json"],
+    "configurePresets": [
+        {
+            "hidden": true,
+            "name": "VS15",
+            "generator": "Visual Studio 15 2017",
+            "inherits": "base"
+        },
+        {
+            "hidden": true,
+            "name": "VS16",
+            "generator": "Visual Studio 16 2019",
+            "inherits": "base"
+        },
+        {
+            "hidden": true,
+            "name": "VS17",
+            "generator": "Visual Studio 17 2022",
+            "inherits": "base"
+        }
+    ]
+}

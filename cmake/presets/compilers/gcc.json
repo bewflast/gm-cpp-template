@@ -1,0 +1,33 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "include": ["../architectures/architectures.json"],
+    "configurePresets": [
+        {
+			"name": "gcc",
+			"hidden": true,
+			"cacheVariables": {
+				"CMAKE_C_COMPILER": "gcc",
+				"CMAKE_CXX_COMPILER": "g++"
+			}
+		},
+        {
+            "hidden": true,
+            "name": "gcc-x86",
+            "inherits": ["arch-x86", "gcc"],
+            "cacheVariables": {
+				"CMAKE_C_FLAGS": "-m32",
+				"CMAKE_CXX_FLAGS": "-m32"
+			}
+        },
+        {
+            "hidden": true,
+            "name": "gcc-x86_64",
+            "inherits": ["arch-x86_64", "gcc"]
+        }
+    ]
+}
