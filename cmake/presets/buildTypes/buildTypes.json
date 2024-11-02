@@ -19,13 +19,6 @@
             "cacheVariables": {
 				"CMAKE_BUILD_TYPE": "Debug"
 			}
-        },
-        {
-            "hidden": true,
-            "name": "rel'n'syms",
-            "cacheVariables": {
-				"CMAKE_BUILD_TYPE": "RelWithDebInfo"
-			}
         }
     ]
 }

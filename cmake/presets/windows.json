@@ -15,63 +15,33 @@
     ],
     "configurePresets": [
         {
-            "name": "windows-VS15-msvc-x86-debug",
-            "inherits": ["VS15", "VS Win32", "debug"],
+            "name": "windows-VS15-msvc-x86",
+            "inherits": ["VS15", "VS Win32"],
             "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
         },
         {
-            "name": "windows-VS15-msvc-x86-release",
-            "inherits": ["VS15", "VS Win32", "release"],
+            "name": "windows-VS15-msvc-x86_64",
+            "inherits": ["VS15", "arch-x86_64"],
             "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
         },
         {
-            "name": "windows-VS15-msvc-x86_64-debug",
-            "inherits": ["VS15", "arch-x86_64", "debug"],
+            "name": "windows-VS16-msvc-x86",
+            "inherits": ["VS16", "VS Win32"],
             "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
         },
         {
-            "name": "windows-VS15-msvc-x86_64-release",
-            "inherits": ["VS15", "arch-x86_64", "release"],
+            "name": "windows-VS16-msvc-x86_64",
+            "inherits": ["VS16", "arch-x86_64"],
             "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
         },
         {
-            "name": "windows-VS16-msvc-x86-debug",
-            "inherits": ["VS16", "VS Win32", "debug"],
+            "name": "windows-VS17-msvc-x86",
+            "inherits": ["VS17", "VS Win32"],
             "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
         },
         {
-            "name": "windows-VS16-msvc-x86-release",
-            "inherits": ["VS16", "VS Win32", "release"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
-        },
-        {
-            "name": "windows-VS16-msvc-x86_64-debug",
-            "inherits": ["VS16", "arch-x86_64", "debug"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
-        },
-        {
-            "name": "windows-VS16-msvc-x86_64-release",
-            "inherits": ["VS16", "arch-x86_64", "release"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
-        },
-        {
-            "name": "windows-VS17-msvc-x86-debug",
-            "inherits": ["VS17", "VS Win32", "debug"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
-        },
-        {
-            "name": "windows-VS17-msvc-x86-release",
-            "inherits": ["VS17", "VS Win32", "release"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
-        },
-        {
-            "name": "windows-VS17-msvc-x86_64-debug",
-            "inherits": ["VS17", "arch-x86_64", "debug"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
-        },
-        {
-            "name": "windows-VS17-msvc-x86_64-release",
-            "inherits": ["VS17", "arch-x86_64", "release"],
+            "name": "windows-VS17-msvc-x86_64",
+            "inherits": ["VS17", "arch-x86_64"],
             "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
         }
     ],
@@ -79,74 +49,146 @@
         {
             "name": "windows-VS15-msvc-x86-debug",
             "displayName": "windows-VS15-msvc-x86-debug",
-            "configurePreset": "windows-VS15-msvc-x86-debug",
+            "configurePreset": "windows-VS15-msvc-x86",
             "configuration": "Debug"
         },
         {
             "name": "windows-VS15-msvc-x86-release",
             "displayName": "windows-VS15-msvc-x86-release",
-            "configurePreset": "windows-VS15-msvc-x86-release",
+            "configurePreset": "windows-VS15-msvc-x86",
             "configuration": "Release"
+        },
+        {
+            "name": "windows-VS15-msvc-x86-minsizerel",
+            "displayName": "windows-VS15-msvc-x86-minsizerel",
+            "configurePreset": "windows-VS15-msvc-x86",
+            "configuration": "MinSizeRel"
+        },
+        {
+            "name": "windows-VS15-msvc-x86-relwithdebinfo",
+            "displayName": "windows-VS15-msvc-x86-relwithdebinfo",
+            "configurePreset": "windows-VS15-msvc-x86",
+            "configuration": "RelWithDebInfo"
         },
         {
             "name": "windows-VS15-msvc-x86_64-debug",
             "displayName": "windows-VS15-msvc-x86_64-debug",
-            "configurePreset": "windows-VS15-msvc-x86_64-debug",
+            "configurePreset": "windows-VS15-msvc-x86_64",
             "configuration": "Debug"
         },
         {
             "name": "windows-VS15-msvc-x86_64-release",
             "displayName": "windows-VS15-msvc-x86_64-release",
-            "configurePreset": "windows-VS15-msvc-x86_64-release",
+            "configurePreset": "windows-VS15-msvc-x86_64",
             "configuration": "Release"
+        },
+        {
+            "name": "windows-VS15-msvc-x86_64-minsizerel",
+            "displayName": "windows-VS15-msvc-x86_64-minsizerel",
+            "configurePreset": "windows-VS15-msvc-x86_64",
+            "configuration": "MinSizeRel"
+        },
+        {
+            "name": "windows-VS15-msvc-x86_64-relwithdebinfo",
+            "displayName": "windows-VS15-msvc-x86_64-relwithdebinfo",
+            "configurePreset": "windows-VS15-msvc-x86_64",
+            "configuration": "RelWithDebInfo"
         },
         {
             "name": "windows-VS16-msvc-x86-debug",
             "displayName": "windows-VS16-msvc-x86-debug",
-            "configurePreset": "windows-VS16-msvc-x86-debug",
+            "configurePreset": "windows-VS16-msvc-x86",
             "configuration": "Debug"
         },
         {
             "name": "windows-VS16-msvc-x86-release",
             "displayName": "windows-VS16-msvc-x86-release",
-            "configurePreset": "windows-VS16-msvc-x86-release",
+            "configurePreset": "windows-VS16-msvc-x86",
             "configuration": "Release"
+        },
+        {
+            "name": "windows-VS16-msvc-x86-minsizerel",
+            "displayName": "windows-VS16-msvc-x86-minsizerel",
+            "configurePreset": "windows-VS16-msvc-x86",
+            "configuration": "MinSizeRel"
+        },
+        {
+            "name": "windows-VS16-msvc-x86-relwithdebinfo",
+            "displayName": "windows-VS16-msvc-x86-debug",
+            "configurePreset": "windows-VS16-msvc-x86",
+            "configuration": "RelWithDebInfo"
         },
         {
             "name": "windows-VS16-msvc-x86_64-debug",
             "displayName": "windows-VS16-msvc-x86_64-debug",
-            "configurePreset": "windows-VS16-msvc-x86_64-debug",
+            "configurePreset": "windows-VS16-msvc-x86_64",
             "configuration": "Debug"
         },
         {
             "name": "windows-VS16-msvc-x86_64-release",
             "displayName": "windows-VS16-msvc-x86_64-release",
-            "configurePreset": "windows-VS16-msvc-x86_64-release",
+            "configurePreset": "windows-VS16-msvc-x86_64",
             "configuration": "Release"
+        },
+        {
+            "name": "windows-VS16-msvc-x86_64-minsizerel",
+            "displayName": "windows-VS16-msvc-x86_64-minsizerel",
+            "configurePreset": "windows-VS16-msvc-x86_64",
+            "configuration": "MinSizeRel"
+        },
+        {
+            "name": "windows-VS16-msvc-x86_64-relwithdebinfo",
+            "displayName": "windows-VS16-msvc-x86_64-relwithdebinfo",
+            "configurePreset": "windows-VS16-msvc-x86_64",
+            "configuration": "RelWithDebInfo"
         },
         {
             "name": "windows-VS17-msvc-x86-debug",
             "displayName": "windows-VS17-msvc-x86-debug",
-            "configurePreset": "windows-VS17-msvc-x86-debug",
+            "configurePreset": "windows-VS17-msvc-x86",
             "configuration": "Debug"
         },
         {
             "name": "windows-VS17-msvc-x86-release",
             "displayName": "windows-VS17-msvc-x86-release",
-            "configurePreset": "windows-VS17-msvc-x86-release",
+            "configurePreset": "windows-VS17-msvc-x86",
             "configuration": "Release"
+        },
+        {
+            "name": "windows-VS17-msvc-x86-minsizerel",
+            "displayName": "windows-VS17-msvc-x86-minsizerel",
+            "configurePreset": "windows-VS17-msvc-x86",
+            "configuration": "MinSizeRel"
+        },
+        {
+            "name": "windows-VS17-msvc-x86-relwithdebinfo",
+            "displayName": "windows-VS17-msvc-x86-relwithdebinfo",
+            "configurePreset": "windows-VS17-msvc-x86",
+            "configuration": "RelWithDebInfo"
         },
         {
             "name": "windows-VS17-msvc-x86_64-debug",
             "displayName": "windows-VS17-msvc-x86_64-debug",
-            "configurePreset": "windows-VS17-msvc-x86_64-debug",
+            "configurePreset": "windows-VS17-msvc-x86_64",
             "configuration": "Debug"
         },
         {
             "name": "windows-VS17-msvc-x86_64-release",
             "displayName": "windows-VS17-msvc-x86_64-release",
-            "configurePreset": "windows-VS17-msvc-x86_64-release",
+            "configurePreset": "windows-VS17-msvc-x86_64",
             "configuration": "Release"
+        },
+        {
+            "name": "windows-VS17-msvc-x86_64-minsizerel",
+            "displayName": "windows-VS17-msvc-x86_64-minsizerel",
+            "configurePreset": "windows-VS17-msvc-x86_64",
+            "configuration": "MinSizeRel"
+        },
+        {
+            "name": "windows-VS17-msvc-x86_64-relwithdebinfo",
+            "displayName": "windows-VS17-msvc-x86_64-relwithdebinfo",
+            "configurePreset": "windows-VS17-msvc-x86_64",
+            "configuration": "RelWithDebInfo"
         }
     ]
 }
