@@ -7,6 +7,7 @@
     },
     "include": [
         "cmake/presets/toolsets/Windows/vs-msvc.json",
-        "cmake/presets/toolsets/Windows/ninja-clang.json"
+        "cmake/presets/toolsets/Windows/ninja-clang.json",
+        "cmake/presets/toolsets/Linux/ninja-clang.json"
     ]
 }

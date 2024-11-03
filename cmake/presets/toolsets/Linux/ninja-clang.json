@@ -1,0 +1,74 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "include": [
+        "../../compilers/clang.json",
+        "../../generators/Ninja.json"
+    ],
+    "configurePresets": [
+        {
+            "name": "linux-ninja-clang-x86",
+            "inherits": ["baseNinja", "clang-x86"]
+        },
+        {
+            "name": "linux-ninja-clang-x86_64",
+            "inherits": ["baseNinja", "clang-x86_64"]
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "linux-ninja-clang-x86-debug",
+            "displayName": "linux-ninja-clang-x86-debug",
+            "configurePreset": "linux-ninja-clang-x86",
+            "configuration": "Debug"
+        },
+        {
+            "name": "linux-ninja-clang-x86-release",
+            "displayName": "linux-ninja-clang-x86-release",
+            "configurePreset": "linux-ninja-clang-x86",
+            "configuration": "Release"
+        },
+        {
+            "name": "linux-ninja-clang-x86-relwithdebinfo",
+            "displayName": "linux-ninja-clang-x86-relwithdebinfo",
+            "configurePreset": "linux-ninja-clang-x86",
+            "configuration": "RelWithDebInfo"
+        },
+        {
+            "name": "linux-ninja-clang-x86-minsizerel",
+            "displayName": "linux-ninja-clang-x86-minsizerel",
+            "configurePreset": "linux-ninja-clang-x86",
+            "configuration": "MinSizeRel"
+
+        },
+        {
+            "name": "linux-ninja-clang-x86_64-debug",
+            "displayName": "linux-ninja-clang-x86_64-debug",
+            "configurePreset": "linux-ninja-clang-x86_64",
+            "configuration": "Debug"
+        },
+        {
+            "name": "linux-ninja-clang-x86_64-release",
+            "displayName": "linux-ninja-clang-x86_64-release",
+            "configurePreset": "linux-ninja-clang-x86_64",
+            "configuration": "Release"
+        },
+        {
+            "name": "linux-ninja-clang-x86_64-relwithdebinfo",
+            "displayName": "linux-ninja-clang-x86_64-relwithdebinfo",
+            "configurePreset": "linux-ninja-clang-x86_64",
+            "configuration": "RelWithDebInfo"
+        },
+        {
+            "name": "linux-ninja-clang-x86_64-minsizerel",
+            "displayName": "linux-ninja-clang-x86_64-minsizerel",
+            "configurePreset": "linux-ninja-clang-x86_64",
+            "configuration": "MinSizeRel"
+
+        }
+    ]
+}

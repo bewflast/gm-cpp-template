@@ -26,7 +26,7 @@
         {
             "hidden": true,
             "name": "clang-x86",
-            "inherits": ["arch-x86", "clang"],
+            "inherits": ["clang"],
             "cacheVariables": {
 				"CMAKE_C_FLAGS": "-m32",
 				"CMAKE_CXX_FLAGS": "-m32"
@@ -35,7 +35,7 @@
         {
             "hidden": true,
             "name": "clang-x86_64",
-            "inherits": ["arch-x86_64", "clang"]
+            "inherits": ["clang"]
         },
         {
             "hidden": true,
