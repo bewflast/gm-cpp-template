@@ -18,7 +18,7 @@
         {
             "hidden": true,
             "name": "gcc-x86",
-            "inherits": ["arch-x86", "gcc"],
+            "inherits": ["gcc"],
             "cacheVariables": {
 				"CMAKE_C_FLAGS": "-m32",
 				"CMAKE_CXX_FLAGS": "-m32"
@@ -27,7 +27,7 @@
         {
             "hidden": true,
             "name": "gcc-x86_64",
-            "inherits": ["arch-x86_64", "gcc"]
+            "inherits": ["gcc"]
         }
     ]
 }

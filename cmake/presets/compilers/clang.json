@@ -17,14 +17,6 @@
         },
         {
             "hidden": true,
-            "name": "win clang",
-            "cacheVariables": {
-				"CMAKE_C_COMPILER": "clang-cl.exe",
-				"CMAKE_CXX_COMPILER": "clang-cl.exe"
-			}
-        },
-        {
-            "hidden": true,
             "name": "clang-x86",
             "inherits": ["clang"],
             "cacheVariables": {
@@ -36,20 +28,6 @@
             "hidden": true,
             "name": "clang-x86_64",
             "inherits": ["clang"]
-        },
-        {
-            "hidden": true,
-            "name": "win clang-x86",
-            "inherits": ["win clang"],
-            "cacheVariables": {
-				"CMAKE_C_FLAGS": "-m32",
-				"CMAKE_CXX_FLAGS": "-m32"
-			}
-        },
-        {
-            "hidden": true,
-            "name": "win clang-x86_64",
-            "inherits": ["win clang"]
         }
     ]
 }

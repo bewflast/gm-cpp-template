@@ -12,11 +12,11 @@
     "configurePresets": [
         {
             "name": "windows-ninja-clang-x86",
-            "inherits": ["baseNinja", "win clang-x86"]
+            "inherits": ["baseNinja", "clang-x86"]
         },
         {
             "name": "windows-ninja-clang-x86_64",
-            "inherits": ["baseNinja", "win clang-x86_64"]
+            "inherits": ["baseNinja", "clang-x86_64"]
         }
     ],
     "buildPresets": [
