@@ -1,0 +1,75 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 25,
+        "patch": 0
+    },
+    "include": [
+        "../../buildTypes/buildTypes.json",
+        "../../compilers/clang.json",
+        "../../generators/Ninja.json"
+    ],
+    "configurePresets": [
+        {
+            "name": "windows-ninja-clang-x86",
+            "inherits": ["baseNinja", "win clang-x86"]
+        },
+        {
+            "name": "windows-ninja-clang-x86_64",
+            "inherits": ["baseNinja", "win clang-x86_64"]
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "windows-ninja-clang-x86-debug",
+            "displayName": "windows-ninja-clang-x86-debug",
+            "configurePreset": "windows-ninja-clang-x86",
+            "configuration": "Debug"
+        },
+        {
+            "name": "windows-ninja-clang-x86-release",
+            "displayName": "windows-ninja-clang-x86-release",
+            "configurePreset": "windows-ninja-clang-x86",
+            "configuration": "Release"
+        },
+        {
+            "name": "windows-ninja-clang-x86-relwithdebinfo",
+            "displayName": "windows-ninja-clang-x86-relwithdebinfo",
+            "configurePreset": "windows-ninja-clang-x86",
+            "configuration": "RelWithDebInfo"
+        },
+        {
+            "name": "windows-ninja-clang-x86-minsizerel",
+            "displayName": "windows-ninja-clang-x86-minsizerel",
+            "configurePreset": "windows-ninja-clang-x86",
+            "configuration": "MinSizeRel"
+
+        },
+        {
+            "name": "windows-ninja-clang-x86_64-debug",
+            "displayName": "windows-ninja-clang-x86_64-debug",
+            "configurePreset": "windows-ninja-clang-x86_64",
+            "configuration": "Debug"
+        },
+        {
+            "name": "windows-ninja-clang-x86_64-release",
+            "displayName": "windows-ninja-clang-x86_64-release",
+            "configurePreset": "windows-ninja-clang-x86_64",
+            "configuration": "Release"
+        },
+        {
+            "name": "windows-ninja-clang-x86_64-relwithdebinfo",
+            "displayName": "windows-ninja-clang-x86_64-relwithdebinfo",
+            "configurePreset": "windows-ninja-clang-x86_64",
+            "configuration": "RelWithDebInfo"
+        },
+        {
+            "name": "windows-ninja-clang-x86_64-minsizerel",
+            "displayName": "windows-ninja-clang-x86_64-minsizerel",
+            "configurePreset": "windows-ninja-clang-x86_64",
+            "configuration": "MinSizeRel"
+
+        }
+    ]
+}

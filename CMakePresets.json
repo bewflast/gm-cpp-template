@@ -5,5 +5,8 @@
         "minor": 25,
         "patch": 0
     },
-    "include": ["cmake/presets/windows.json"]
+    "include": [
+        "cmake/presets/toolsets/Windows/vs-msvc.json",
+        "cmake/presets/toolsets/Windows/ninja-clang.json"
+    ]
 }

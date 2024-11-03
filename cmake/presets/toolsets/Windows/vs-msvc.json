@@ -6,43 +6,35 @@
         "patch": 0
     },
     "include": [
-        "architectures/architectures.json",
-        "buildTypes/buildTypes.json",
-        "compilers/cl.json",
-        "compilers/clang.json",
-        "generators/Ninja.json",
-        "generators/VS.json"
+        "../../architectures/architectures.json",
+        "../../buildTypes/buildTypes.json",
+        "../../compilers/cl.json",
+        "../../generators/VS.json"
     ],
     "configurePresets": [
         {
             "name": "windows-VS15-msvc-x86",
-            "inherits": ["VS15", "VS Win32"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
+            "inherits": ["VS15", "VS Win32"]
         },
         {
             "name": "windows-VS15-msvc-x86_64",
-            "inherits": ["VS15", "arch-x86_64"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
+            "inherits": ["VS15", "arch-x86_64"]
         },
         {
             "name": "windows-VS16-msvc-x86",
-            "inherits": ["VS16", "VS Win32"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
+            "inherits": ["VS16", "VS Win32"]
         },
         {
             "name": "windows-VS16-msvc-x86_64",
-            "inherits": ["VS16", "arch-x86_64"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
+            "inherits": ["VS16", "arch-x86_64"]
         },
         {
             "name": "windows-VS17-msvc-x86",
-            "inherits": ["VS17", "VS Win32"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
+            "inherits": ["VS17", "VS Win32"]
         },
         {
             "name": "windows-VS17-msvc-x86_64",
-            "inherits": ["VS17", "arch-x86_64"],
-            "binaryDir": "$env{BUILD_DIRECTORY}/${presetName}"
+            "inherits": ["VS17", "arch-x86_64"]
         }
     ],
     "buildPresets": [

@@ -9,10 +9,6 @@
         {
             "hidden": true,
             "name": "base",
-            "environment": {
-                "BUILD_DIRECTORY": "${sourceDir}/_builds",
-                "INSTALL_DIRECTORY": "$env{BUILD_DIRECTORY}/_installs"
-            },
             "cacheVariables": {
                 "BUILD_SHARED_LIBS": {
                     "type": "BOOL",
@@ -20,7 +16,7 @@
                 },
                 "CMAKE_EXPORT_COMPILE_COMMANDS": {
                     "type": "BOOL",
-                    "value": "OFF"
+                    "value": "ON"
                 }
             }
         }

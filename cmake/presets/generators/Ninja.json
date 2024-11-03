@@ -10,8 +10,12 @@
         {
             "hidden": true,
             "name" : "baseNinja",
-            "generator": "Ninja",
-            "inherits": "base"
+            "generator": "Ninja Multi-Config",
+            "inherits": "base",
+            "binaryDir":"${sourceDir}/_builds/${presetName}",
+            "cacheVariables": {
+                "CMAKE_CONFIGURATION_TYPES": "Debug;Release;RelWithDebInfo;MinSizeRel"
+            }
         }
     ]
 }

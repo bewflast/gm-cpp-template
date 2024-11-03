@@ -9,21 +9,31 @@
     "configurePresets": [
         {
             "hidden": true,
+            "name": "base VS",
+            "cacheVariables": {
+                "CMAKE_CONFIGURATION_TYPES": "Debug;Release;RelWithDebInfo;MinSizeRel"
+            }
+        },
+        {
+            "hidden": true,
             "name": "VS15",
             "generator": "Visual Studio 15 2017",
-            "inherits": "base"
+            "inherits": ["base", "base VS"],
+            "binaryDir":"${sourceDir}/_builds/${presetName}"
         },
         {
             "hidden": true,
             "name": "VS16",
             "generator": "Visual Studio 16 2019",
-            "inherits": "base"
+            "inherits": ["base", "base VS"],
+            "binaryDir":"${sourceDir}/_builds/${presetName}"
         },
         {
             "hidden": true,
             "name": "VS17",
             "generator": "Visual Studio 17 2022",
-            "inherits": "base"
+            "inherits": ["base", "base VS"],
+            "binaryDir":"${sourceDir}/_builds/${presetName}"
         }
     ]
 }

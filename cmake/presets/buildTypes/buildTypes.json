@@ -19,6 +19,20 @@
             "cacheVariables": {
 				"CMAKE_BUILD_TYPE": "Debug"
 			}
+        },
+        {
+            "hidden": true,
+            "name": "release with symbols",
+            "cacheVariables": {
+				"CMAKE_BUILD_TYPE": "RelWithDebInfo"
+			}
+        },
+        {
+            "hidden": true,
+            "name": "min size release",
+            "cacheVariables": {
+				"CMAKE_BUILD_TYPE": "MinSizeRel"
+			}
         }
     ]
 }

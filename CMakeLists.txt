@@ -14,6 +14,4 @@ endif()
 add_subdirectory(external/gmod-module-base)
 add_subdirectory(src)
 
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "") # works
-
 set_gmod_suffix_prefix(example)
