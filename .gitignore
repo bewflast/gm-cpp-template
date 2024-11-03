@@ -1,2 +1,3 @@
 _builds/
 .cache
+*compile_commands.json
